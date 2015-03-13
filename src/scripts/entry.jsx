@@ -1,4 +1,4 @@
 import React from 'react';
-import MPC from './components/MPC.jsx';
+import MPCContainer from './components/MPCContainer.jsx';
 
-React.render(<MPC />, document.body);
+React.render(<MPCContainer />, document.body);

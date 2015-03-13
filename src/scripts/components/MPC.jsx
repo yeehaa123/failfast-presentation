@@ -7,25 +7,6 @@ import '../../styles/app.css';
 
 class MPC extends React.Component {
 
-  constructor(props){
-    super(props);
-    this.onChange = this.onChange.bind(this);
-  }
-
-  componentDidMount() {
-    AppState.addChangeListener(this.onChange);
-    this.onChange();
-  }
-
-  componentWillUnmount() {
-    AppState.removeChangeListener(this.onChange);
-  }
-
-  onChange(){
-    this.props.activePad = AppState.activePad;
-    this.forceUpdate();
-  }
-
   render(){
     return (
       <section className='app'>

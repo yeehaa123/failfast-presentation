@@ -11,7 +11,7 @@ class Pad extends React.Component {
   render(){
     return (
       <button className="pad" onClick={ this.handleClick.bind(this) }>
-        BUTT-ON
+        { this.props.id }
       </button>
     )
   }

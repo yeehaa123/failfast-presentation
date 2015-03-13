@@ -1,8 +1,17 @@
 component(pads) {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: var(--baseUnit);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-width: calc(13 * var(--baseUnit));
+  max-width: calc(13 * var(--baseUnit));
   background-color: var(--inverseColor);
+}
+
+component(pad){ background: var(--baseColor);
+  color: var(--inverseColor);
+  min-width: calc(3 * var(--baseUnit));
+  min-width: calc(3 * var(--baseUnit));
+  height: calc(3 * var(--baseUnit));
 }
