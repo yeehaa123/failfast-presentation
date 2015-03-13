@@ -1,0 +1,8 @@
+component(pads) {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--baseUnit);
+  background-color: var(--inverseColor);
+}

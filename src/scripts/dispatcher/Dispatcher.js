@@ -27,7 +27,6 @@ class Dispatcher {
     });
     _promises = [];
   }
-
 }
 
 export default Dispatcher;
