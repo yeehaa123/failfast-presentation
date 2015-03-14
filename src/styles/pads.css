@@ -4,9 +4,8 @@ component(pads) {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  min-width: calc(13 * var(--baseUnit));
-  max-width: calc(13 * var(--baseUnit));
-  background-color: var(--inverseColor);
+  min-width: calc(14 * var(--baseUnit));
+  max-width: calc(14 * var(--baseUnit));
 }
 
 component(pad){ background: var(--baseColor);

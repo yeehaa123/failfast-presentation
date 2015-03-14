@@ -8,11 +8,14 @@ import '../../styles/app.css';
 class MPC extends React.Component {
 
   render(){
+    let { activePad } = this.props;
+    console.log(activePad);
     return (
       <section className='app'>
         <Sidebar />
         <section className='main'>
-          <img src={ this.props.activePad.content }/>
+        { activePad.type === 'image' && <img src={ activePad.content }/>}
+        { activePad.type === 'text' && <h1>{ activePad.content }</h1>}
         </section>
       </section>
     )
