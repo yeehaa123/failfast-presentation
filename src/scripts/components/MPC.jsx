@@ -12,7 +12,7 @@ class MPC extends React.Component {
       <section className='app'>
         <Sidebar />
         <section className='main'>
-          <h1>{ this.props.activePad.content }</h1>
+          <img src={ this.props.activePad.content }/>
         </section>
       </section>
     )
@@ -21,7 +21,7 @@ class MPC extends React.Component {
 
 MPC.defaultProps = {
   activePad: {
-    content: 'click button'
+    content: 'http://www.mentalutensil.com/wp-content/uploads/2013/11/sg14.jpg'
   }
 }
 
