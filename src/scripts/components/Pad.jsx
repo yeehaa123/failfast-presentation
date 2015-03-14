@@ -1,6 +1,7 @@
 import React from 'react';
 import Actions from '../actions/index.js';
 import '../../styles/pad.css';
+
 class Pad extends React.Component {
   constructor(props){
     super(props);

@@ -12,7 +12,6 @@ class Pads extends React.Component {
 
   render(){
     let { allPads, activePad, playing } = this.props;
-    console.log(playing);
     let createPads = R.map(({ index, type, content}) => {
       let isActive = index === activePad.index;
       return <Pad isActive={ isActive } key={ index } type={ type } id={ index } content={ content }/>
