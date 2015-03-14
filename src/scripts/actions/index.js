@@ -7,6 +7,11 @@ let Actions = {
       actionType: AppStateConstants.PAD_PUSHED,
       pad: pad
     });
+  },
+  toggleAutoPlay(){
+    AppDispatcher.handleViewAction({
+      actionType: AppStateConstants.TOGGLE_AUTOPLAY,
+    });
   }
 };
 

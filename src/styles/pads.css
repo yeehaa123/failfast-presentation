@@ -8,9 +8,3 @@ component(pads) {
   max-width: calc(14 * var(--baseUnit));
 }
 
-component(pad){ background: var(--baseColor);
-  color: var(--inverseColor);
-  min-width: calc(3 * var(--baseUnit));
-  min-width: calc(3 * var(--baseUnit));
-  height: calc(3 * var(--baseUnit));
-}

@@ -2,13 +2,12 @@ import React from 'react';
 import MPC from './MPC.jsx';
 import { AppState } from '../stores/index.js';
 
-
 class MPCContainer extends React.Component {
 
   constructor(props){
     super(props);
-    let { activePad } = AppState;
-    this.state = { activePad };
+    let { activePad, allPads, playing } = AppState;
+    this.state = { activePad, allPads, playing };
     this.onChange = this.onChange.bind(this);
   }
 
@@ -22,14 +21,14 @@ class MPCContainer extends React.Component {
   }
 
   onChange(){
-    let { activePad } = AppState;
-    this.setState({ activePad });
+    let { activePad, allPads, playing } = AppState;
+    this.setState({ activePad, allPads, playing });
   }
 
   render(){
-    let activePad = AppState.activePad;
+    let { activePad, allPads, playing } = AppState;
     return (
-      <MPC activePad={ activePad } />
+      <MPC allPads={ allPads } playing={ playing } activePad={ activePad } />
     )
   }
 }

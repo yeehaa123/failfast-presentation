@@ -4,9 +4,11 @@ import '../../styles/sidebar.css';
 
 class Sidebar extends React.Component {
   render(){
+    let { activePad, allPads, playing } = this.props;
+
     return (
       <section className='sidebar'>
-        <Pads />
+        <Pads activePad={ activePad } playing={ playing } allPads={ allPads }/>
         <section className="modeSwitch"/>
       </section>
     )
