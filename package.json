@@ -44,7 +44,8 @@
     "url-loader": "^0.5.5",
     "webpack": "^1.5.3",
     "webpack-dev-server": "^1.7.0",
-    "yaml-loader": "^0.1.0"
+    "yaml-loader": "^0.1.0",
+    "marked": "^0.3.3"
   },
   "scripts": {
     "dev": "webpack-dev-server --hot --progress --colors --content-base build",

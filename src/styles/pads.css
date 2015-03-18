@@ -2,9 +2,8 @@ component(pads) {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  min-width: calc(14 * var(--baseUnit));
-  max-width: calc(14 * var(--baseUnit));
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: center;
+  width: 100%;
 }
-

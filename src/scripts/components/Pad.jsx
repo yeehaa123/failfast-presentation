@@ -7,7 +7,7 @@ class Pad extends React.Component {
     super(props);
   }
   handleClick(){
-    Actions.padPushed(this.props);
+    Actions.padPushed(this.props.id);
   }
   render(){
     let { isActive, id } = this.props;
@@ -25,12 +25,9 @@ class Pad extends React.Component {
   }
 }
 
-Pad.defaultProps = {
-  id: 9999999
-}
-
 Pad.propTypes = {
-  id: React.PropTypes.number 
+  id: React.PropTypes.number.isRequired,
+  isActive: React.PropTypes.bool
 }
 
 export default Pad;

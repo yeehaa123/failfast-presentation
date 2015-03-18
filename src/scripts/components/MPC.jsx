@@ -7,16 +7,21 @@ import 'normalize.css/normalize.css';
 import '../../styles/app.css';
 
 class MPC extends React.Component {
-
   render(){
-    let { activePad, allPads, playing } = this.props;
+    let { playing, slideShow, activeSlide } = this.props;
     return (
       <section className='app'>
-        <Sidebar activePad={ activePad } playing={ playing } allPads={ allPads }/>
-        <Main activePad={ activePad }/>
+        <Sidebar slideShow={ slideShow } activeSlide ={ activeSlide } playing={ playing } />
+        <Main activeSlide={ activeSlide } playing={ playing } slides={ slideShow.slides }/>
       </section>
     )
   }
+}
+
+MPC.propTypes = {
+  activeSlide: React.PropTypes.number,
+  playing: React.PropTypes.bool,
+  slideShow: React.PropTypes.object.isRequired
 }
 
 

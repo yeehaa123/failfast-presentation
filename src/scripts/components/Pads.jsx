@@ -11,19 +11,24 @@ class Pads extends React.Component {
   }
 
   render(){
-    let { allPads, activePad, playing } = this.props;
-    let createPads = R.map(({ index, type, content}) => {
-      let isActive = index === activePad.index;
-      return <Pad isActive={ isActive } key={ index } type={ type } id={ index } content={ content }/>
+    let { activeSlide, playing, slides } = this.props;
+    let createPads = R.mapIndexed(({ index, layout, content}) => {
+      let isActive = index === activeSlide;
+      return <Pad isActive={ isActive } key={ index } type={ layout } id={ index } content={ content }/>
     })
-    let pads = createPads(allPads); 
+    let pads = createPads(slides); 
     return (
       <section className="pads">
         { pads }
-        <button className={ playing ? 'active' : null } onClick={ this.handleClick }>Autoplay</button>
       </section>
     )
   }
+}
+
+Pads.propTypes = {
+  activeSlide: React.PropTypes.number,
+  playing: React.PropTypes.bool,
+  slides: React.PropTypes.array.isRequired
 }
 
 export default Pads;

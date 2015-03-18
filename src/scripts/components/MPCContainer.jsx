@@ -6,8 +6,8 @@ class MPCContainer extends React.Component {
 
   constructor(props){
     super(props);
-    let { activePad, allPads, playing } = AppState;
-    this.state = { activePad, allPads, playing };
+    let { activePad, allPads, playing, slideShow, activeSlide } = AppState;
+    this.state = { activePad, allPads, playing, slideShow, activeSlide };
     this.onChange = this.onChange.bind(this);
   }
 
@@ -21,14 +21,14 @@ class MPCContainer extends React.Component {
   }
 
   onChange(){
-    let { activePad, allPads, playing } = AppState;
-    this.setState({ activePad, allPads, playing });
+    let { activePad, allPads, playing, slideShow, activeSlide } = AppState;
+    this.setState({ activePad, allPads, playing, slideShow, activeSlide });
   }
 
   render(){
-    let { activePad, allPads, playing } = AppState;
+    let { activePad, allPads, playing, slideShow, activeSlide} = this.state;
     return (
-      <MPC allPads={ allPads } playing={ playing } activePad={ activePad } />
+      <MPC slideShow={ slideShow } allPads={ allPads } playing={ !!playing } activeSlide={ activeSlide } activePad={ activePad } />
     )
   }
 }

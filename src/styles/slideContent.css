@@ -1,0 +1,23 @@
+component(slideContent){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 70%;
+  padding: var(--baseUnit);
+
+  li {
+    margin: calc(1.5 * var(--baseUnit));
+    font-size: calc(0.5 *var(--baseUnit));
+    list-style: none;
+  }
+
+  li em {
+    width: auto;
+    font-style: normal;
+    padding: calc(0.5 * var(--baseUnit));
+    color: var(--inverseColor); 
+    background-color: var(--baseColor);
+  }
+}

@@ -1,0 +1,11 @@
+component(timeline) {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-around;
+  align-items: center;
+  color: var(--darkBaseColor);
+  width: 100%;
+  background-color: var(--betweenBaseColor);
+  min-height: calc(3 * var(--baseUnit));
+}

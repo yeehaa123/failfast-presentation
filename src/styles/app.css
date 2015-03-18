@@ -12,9 +12,23 @@
     display: none; 
   }
 
-component(app){
-  display: flex;
-  font-family: NittyNormal;
-  height: 100%;
+* {
+  box-sizing: border-box;
 }
 
+component(app){
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: NittyNormal;
+  height: 100vh;
+}
+
+button {
+  border: none;
+  font-size: var(--baseUnit);
+  padding: 0;
+  background-color: var(--baseColor);
+  width: calc(2 * var(--baseUnit));
+  height: calc(2 * var(--baseUnit));
+}

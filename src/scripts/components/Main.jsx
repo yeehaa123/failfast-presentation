@@ -1,16 +1,24 @@
 import React from 'react';
 import '../../styles/main.css';
+import Timeline from './Timeline.jsx';
+import Slides from './Slides.jsx';
 
 class Main extends React.Component {
   render(){
-    let { activePad } = this.props;
+    let { activeSlide, slides, playing } = this.props;
     return (
       <section className='main'>
-        { activePad.type === 'image' && <img src={ activePad.content }/>}
-        { activePad.type === 'text' && <h1>{ activePad.content }</h1>}
+        <Slides activeSlide={ activeSlide } slides={slides}/>
       </section>
     )
   }
 }
+
+Main.propTypes = {
+  activeSlide: React.PropTypes.number,
+  slides: React.PropTypes.array.isRequired,
+  playing: React.PropTypes.bool
+};
+
 
 export default Main;
