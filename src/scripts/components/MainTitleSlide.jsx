@@ -2,10 +2,10 @@ import React from 'react';
 import Actions from '../actions/index.js';
 import '../../styles/slide.css';
 
-class Slide extends React.Component {
+class MainTitleSlide extends React.Component {
 
-  closeSidebar(){
-    Actions.closeSidebar()
+  toggleSidebar(){
+    Actions.toggleSidebar()
   }
 
   render(){
@@ -17,15 +17,14 @@ class Slide extends React.Component {
           <h1>{ title }</h1>
         </section>
         <footer>
-          <button onClick={ this.closeSidebar }>-</button>
         </footer>
       </section>
     )
   }
 }
-Slide.propTypes = {
+MainTitleSlide.propTypes = {
   slide: React.PropTypes.object.isRequired
 }
 
 
-export default Slide;
+export default MainTitleSlide;

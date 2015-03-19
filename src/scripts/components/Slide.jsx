@@ -4,19 +4,15 @@ import SlideLabel from './SlideLabel.jsx';
 import SlideContent from './SlideContent.jsx';
 
 class Slide extends React.Component {
-  closeSidebar(){
-    console.log('oops');
-  }
   render(){
-    let { type, content, sectionTitle } = this.props.slide;
+    let { type, content, sectionTitle, title } = this.props.slide;
     return (
       <section className='slide'>
         <header>
-          { type === 'normal' && <SlideLabel title={ sectionTitle }/> }
+          { type === 'normal' && <SlideLabel title={ title || sectionTitle }/> }
         </header>
         { content && <SlideContent content={ content }/> }
         <footer>
-          <button onClick={ this.closeSidebar }>+</button>
         </footer>
       </section>
     )

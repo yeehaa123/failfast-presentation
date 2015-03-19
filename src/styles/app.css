@@ -28,7 +28,16 @@ button {
   border: none;
   font-size: var(--baseUnit);
   padding: 0;
-  background-color: var(--baseColor);
+  background-color: var(--darkBaseColor);
   width: calc(2 * var(--baseUnit));
   height: calc(2 * var(--baseUnit));
+}
+
+h1 {
+  padding: calc(0.5 * var(--baseUnit));
+  font-size: calc(1 *var(--baseUnit));
+  background-color: var(--baseColor);
+  color: var(--inverseColor);
+  margin: 0;
+  text-align: center;
 }

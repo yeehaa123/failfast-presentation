@@ -1,15 +1,43 @@
 title: Of Different Cultures
 slides: 
-- type: main-title
-  title: Of Different Cultures
+
+- title: Of Different Cultures
+  type: main-title
+
+- title: The Ends of Learning
+  type: section-title
+
+- type: normal
+  content:
+
+    + practices to eradicate 
+
+    + goals to achieve
+
+- type: normal
+  content:
+
+    + What Ends?
+
+    + To What End? 
+
+- title: To What End?
+  type: normal
+  content:
+
+- title: What Ends?
+  type: normal
+  content:
+
+    + Practice
+
+
 - type: section-title
-  title: Labs 
-- title: Test 
-  type: normal 
-  content: |
-    bla bla bla *bla*
+  title: Mirror Practice 
+
 - type: section-title
-  title: Coworking Spaces 
+  title: Ethos 
+
 - title: Thank You
   type: credits 
   content: |

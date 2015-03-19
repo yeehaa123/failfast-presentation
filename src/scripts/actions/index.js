@@ -2,9 +2,9 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import AppStateConstants from '../constants/AppStateConstants'
 
 let Actions = {
-  closeSidebar(){
+  toggleSidebar(){
     AppDispatcher.handleViewAction({
-      actionType: AppStateConstants.CLOSE_SIDEBAR
+      actionType: AppStateConstants.TOGGLE_SIDEBAR
     });
   },
   transitionSlide(direction){

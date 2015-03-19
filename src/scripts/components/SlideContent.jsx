@@ -7,8 +7,8 @@ class SlideContent extends React.Component {
     let { content } = this.props;
     let renderedContent = {__html: marked(content)};
     return (
-      <section className="content" 
-               dangerouslySetInnerHTML={ renderedContent }>
+      <section className="content">
+        <div dangerouslySetInnerHTML={ renderedContent }/>
       </section>
     )
   }

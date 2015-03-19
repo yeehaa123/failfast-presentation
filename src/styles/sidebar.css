@@ -3,17 +3,21 @@ component(sidebar) {
   display: flex;
   flex-direction: column;
   color: var(--inverseColor);
-  width: calc(13 * var(--baseUnit));
+  width: calc(3 * var(--baseUnit));
   height: 100%;
   padding: var(--baseUnit); 
   background-color: var(--darkBaseColor);
   justify-content: flex-end;
   align-items: center;
 }
+.closed {
+  display: none;
+}
 
 component(controlPanel) {
-  width: 100%;
+  height: calc(10 * var(--baseUnit)); 
   font-style: bold;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-end;
 }

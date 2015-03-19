@@ -17,6 +17,7 @@ class AppState extends BaseStore {
     this.playing = undefined;
     //this.play();
     this.toggle = this._toggle.bind(this);
+    this.sidebarOpen = true;
   }
 
   _toggle(){
@@ -57,6 +58,11 @@ class AppState extends BaseStore {
     this.update();
   }
 
+  toggleSidebar(){
+    this.sidebarOpen = this.sidebarOpen ? false : true;
+    this.update();
+  }
+
   update(){
     this.emitChange();
   }
@@ -74,8 +80,8 @@ class AppState extends BaseStore {
         let { direction } = action;
         this.transitionSlide(direction);
         break;
-      case AppStateConstants.CLOSE_SIDEBAR:
-        console.log('yeah');
+      case AppStateConstants.TOGGLE_SIDEBAR:
+        this.toggleSidebar();
         break;
     }
     return true;

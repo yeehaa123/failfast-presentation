@@ -8,10 +8,10 @@ import '../../styles/app.css';
 
 class MPC extends React.Component {
   render(){
-    let { playing, slideShow, activeSlide } = this.props;
+    let { playing, slideShow, activeSlide, sidebarOpen } = this.props;
     return (
       <section className='app'>
-        <Sidebar slideShow={ slideShow } activeSlide ={ activeSlide } playing={ playing } />
+        <Sidebar isOpen={ sidebarOpen } />
         <Main activeSlide={ activeSlide } playing={ playing } slides={ slideShow.slides }/>
       </section>
     )
@@ -21,7 +21,8 @@ class MPC extends React.Component {
 MPC.propTypes = {
   activeSlide: React.PropTypes.number,
   playing: React.PropTypes.bool,
-  slideShow: React.PropTypes.object.isRequired
+  slideShow: React.PropTypes.object.isRequired,
+  sidebarOpen: React.PropTypes.bool
 }
 
 
