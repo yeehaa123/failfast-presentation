@@ -8,38 +8,61 @@
   src: url('../assets/fonts/NB.woff') format('woff');
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
   }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 22px;
+  line-height: calc(30/22)rem;
+}
+
+@media (max-width: 2000px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+}
+
 component(app){
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
   font-family: NittyNormal;
   height: 100vh;
   background-color: var(--yellow);
 }
 
+
 button {
   border: none;
-  font-size: var(--baseUnit);
-  padding: 0;
+  font-size: 1rem;
   background-color: var(--darkBaseColor);
-  width: calc(2 * var(--baseUnit));
-  height: calc(2 * var(--baseUnit));
+  width: 2rem;
+  height: 2rem;
 }
 
 h1 {
-  padding: calc(0.5 * var(--baseUnit));
-  font-size: calc(1 *var(--baseUnit));
+  display: inline-block;
+  padding: 0 0.75rem;
+  font-size: 3rem;
   background-color: var(--baseColor);
   color: var(--inverseColor);
   margin: 0;
-  text-align: center;
 }

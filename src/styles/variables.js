@@ -18,7 +18,7 @@ var variables = _.merge(variables, colors);
 
 var grid = {
   '--baseUnit':'30px',
-  '--padding': '30px'
+  '--baseFont':'22px',
 }
 
 var variables = _.merge(variables, grid);

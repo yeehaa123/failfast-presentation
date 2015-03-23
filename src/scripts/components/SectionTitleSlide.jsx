@@ -4,10 +4,12 @@ import '../../styles/slide.css';
 class SectionTitleSlide extends React.Component {
   render(){
     let { title, sectionIndex } = this.props.slide;
-    let classes = `titleSlide section${ sectionIndex }`;
+    let classes = `titleSlide slide section${ sectionIndex }`;
     return (
       <section className={ classes }>
-        <h1>{ title }</h1>
+        <section className="content">
+          <h1>{ title }</h1>
+        </section>
       </section>
     )
   }

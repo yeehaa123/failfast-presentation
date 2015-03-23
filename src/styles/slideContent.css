@@ -19,12 +19,14 @@ component(slideContent){
   }
 
   li p {
+    font-family: NittyBold;
+    display: inline-block;
     width: auto;
     font-style: normal;
     margin: 0;
-    margin-bottom: var(--baseUnit);
-    font-size:  calc(2 * var(--baseUnit));
-    padding: calc(0.5 * var(--baseUnit));
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    padding: 0 0.75rem;
     background-color: var(--inverseColor); 
     color: var(--baseColor);
   }

@@ -3,21 +3,20 @@ component(sidebar) {
   display: flex;
   flex-direction: column;
   color: var(--inverseColor);
-  width: calc(3 * var(--baseUnit));
+  width: 3rem;
   height: 100%;
-  padding: var(--baseUnit); 
+  padding: 1rem;
   background-color: var(--darkBaseColor);
   justify-content: space-between; 
   align-items: center;
 }
 
 .sidebar.closed {
-  height: calc(3 * var(--baseUnit));
+  height: 4rem;
 }
 
-
 component(controlPanel) {
-  height: calc(10 * var(--baseUnit)); 
+  height: 10rem;
   font-style: bold;
   display: flex;
   flex-direction: column;
