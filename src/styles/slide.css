@@ -4,17 +4,21 @@ component(slide){
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  padding: calc(1 * var(--baseUnit));
+  padding: calc(2 * var(--baseUnit));
 
   img {
     width: 100%;
     height: 100%;
   }
 
+  .label {
+    display: block;
+  }
   .label h1 {
     display: inline-block;
     padding: calc(0.375 * var(--baseUnit));
     font-size: calc(0.75 *var(--baseUnit));
+    margin-bottom: calc(2 * var(--baseUnit));
   }
 
   header, footer {
@@ -25,8 +29,15 @@ component(slide){
   li {
     list-style: none;
     margin: 0;
+  } 
+
+  li p {
+    font-family: NittyBold;
+    display: inline-block;
+    background-color: var(--baseColor);
+    color: var(--inverseColor);
     padding: calc(0.5 * var(--baseUnit));
-    margin-bottom: calc(1 * var(--baseUnit));
+    margin-bottom: calc(0 * var(--baseUnit));
     font-size: calc(1 *var(--baseUnit));
   } 
 

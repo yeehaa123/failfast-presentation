@@ -7,12 +7,14 @@ component(sidebar) {
   height: 100%;
   padding: var(--baseUnit); 
   background-color: var(--darkBaseColor);
-  justify-content: flex-end;
+  justify-content: space-between; 
   align-items: center;
 }
-.closed {
-  display: none;
+
+.sidebar.closed {
+  height: calc(3 * var(--baseUnit));
 }
+
 
 component(controlPanel) {
   height: calc(10 * var(--baseUnit)); 
@@ -20,4 +22,8 @@ component(controlPanel) {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.controlPanel.closed {
+  display: none;
 }

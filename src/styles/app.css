@@ -20,8 +20,10 @@ component(app){
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   font-family: NittyNormal;
   height: 100vh;
+  background-color: var(--yellow);
 }
 
 button {

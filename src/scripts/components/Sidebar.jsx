@@ -1,33 +1,25 @@
 import React from 'react';
 import '../../styles/sidebar.css';
 import Actions from '../actions/index.js';
-import DirectionButton from './DirectionButton.jsx';
+import ControlPanel from './ControlPanel.jsx';
 import R from 'ramda';
 
 class Sidebar extends React.Component {
 
   handleClick(direction){
-    Actions.transitionSlide(direction);
-  }
-
-  toggleSidebar(){
     Actions.toggleSidebar();
   }
 
   render(){
     let { isOpen } = this.props;
-    let directions = [ 'start', 'back', 'forward', 'end' ];
-    let createButtons = R.map((direction) => (
-      <DirectionButton key={ direction } direction={ direction }/>
-    ));
-    let buttons = createButtons(directions);
     let classes = `sidebar ${ !isOpen ? 'closed' : 'open' }`;
 
     return (
       <section className={ classes }>
-        <section className="controlPanel">
-          { buttons }
-        </section>
+        <button onClick={ this.handleClick } class="collapser">
+          { isOpen ? '-' : '+' }
+        </button>
+        <ControlPanel isOpen={ isOpen }/>
       </section>
     )
   }

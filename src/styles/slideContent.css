@@ -2,22 +2,30 @@ component(slideContent){
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-content: flex-start;
   height: 100%;
-  width: 70%;
-  padding: var(--baseUnit);
+  width: 100%;
+  padding: 0;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  } 
 
   li {
-    margin: calc(1.5 * var(--baseUnit));
-    font-size: calc(0.5 *var(--baseUnit));
+    margin: 0; 
+    padding: 0;
     list-style: none;
   }
 
-  li em {
+  li p {
     width: auto;
     font-style: normal;
+    margin: 0;
+    margin-bottom: var(--baseUnit);
+    font-size:  calc(2 * var(--baseUnit));
     padding: calc(0.5 * var(--baseUnit));
-    color: var(--inverseColor); 
-    background-color: var(--baseColor);
+    background-color: var(--inverseColor); 
+    color: var(--baseColor);
   }
 }
