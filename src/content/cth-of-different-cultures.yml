@@ -1,19 +1,19 @@
 title: Of Different Cultures
+event: 
+  organizer: Kennisland
+  date: 27-03-2014
+presenter:
+  name: Jan Hein Hoogstad
+  twitter: '@yeehaa'
+  email: yeehaa@codingthehumanities.com
 slides: 
-
-- title: Of Different Cultures
-  type: main-title
-
 - title: The Ends of Learning
   type: section-title
-
 - type: normal
   content:
-
-    + Practices to Eradicate   
+    + Practices to Eradicate
 
     + Goals to Achieve
-
 - type: normal
   content:
 
@@ -37,18 +37,3 @@ slides:
 
 - type: section-title
   title: Ethos 
-
-- title: Thank You
-  type: credits 
-  content: |
-    Jan Hein Hoogstad
-    
-    Websites: 
-      + [www.codingthehumanities.com](http://www.codingthehumanities.com)
-      + [www.unacademic.io](http://www.unacademic.io)
-      
-    Github: yeehaa123
-
-    Twitter: @yeehaa
-
-    Email: yeehaa@codingthehumanities.com

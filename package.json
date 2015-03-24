@@ -2,7 +2,7 @@
   "name": "unacademic_react",
   "version": "1.0.0",
   "description": "",
-  "main": "bundle.js",
+  "inline-source-map": "bundle.js",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer-core": "^5.1.7",

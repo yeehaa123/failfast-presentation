@@ -6,19 +6,66 @@ component(slide){
   height: 100%;
   padding: 3rem;
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
-
   .label {
     display: block;
   }
+
+  header, footer {
+    flex: 1;
+    display: flex;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  } 
+
+  .meta h1 {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    color: var(--baseColor);
+    background-color: var(--inverseColor);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .profile {
+      li p {
+        font-size: 0.5rem;
+        margin-bottom: 0.25rem;
+        padding: 0.25rem;
+        color: var(--baseColor);
+      }
+    }
+  }
+
   .label h1 {
     display: inline-block;
     font-size: 1.5rem;
     padding: 0 0.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  li {
+    font-family: NittyBold;
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+  }
+
+  li p {
+    display: inline-block;
+    width: auto;
+    font-style: normal;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+    font-size: 3rem;
+    background-color: var(--inverseColor); 
+    color: var(--baseColor);
   }
 
   header, footer {

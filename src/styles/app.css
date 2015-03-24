@@ -17,21 +17,28 @@
 }
 
 html {
-  font-size: 22px;
+  font-size: 36px;
   line-height: calc(30/22)rem;
 }
 
 @media (max-width: 2000px) {
   html {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
     font-size: 16px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   html {
     font-size: 12px;
   }
 }
+
 
 @media (max-width: 400px) {
   html {
@@ -58,11 +65,16 @@ button {
   height: 2rem;
 }
 
-h1 {
+h1, h2{
   display: inline-block;
-  padding: 0 0.75rem;
+  margin: 0;
+}
+
+h1 {
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
   font-size: 3rem;
   background-color: var(--baseColor);
   color: var(--inverseColor);
-  margin: 0;
 }
+
