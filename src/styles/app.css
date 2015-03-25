@@ -27,22 +27,39 @@ html {
   }
 }
 
+@media (max-width: 1500px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 1000px) {
   html {
     font-size: 16px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   html {
     font-size: 12px;
   }
 }
 
+@media (max-width: 650px) {
+  html {
+    font-size: 10px;
+  }
+}
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   html {
     font-size: 8px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 6px;
   }
 }
 
@@ -71,7 +88,7 @@ h1, h2{
 }
 
 h1 {
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   margin-bottom: 1.5rem;
   font-size: 3rem;
   background-color: var(--baseColor);

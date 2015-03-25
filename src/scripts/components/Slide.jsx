@@ -2,6 +2,7 @@ import React from 'react';
 import '../../styles/slide.css';
 import SlideLabel from './SlideLabel.jsx';
 import SlideContent from './SlideContent.jsx';
+import SlideProgram from './SlideProgram.jsx';
 
 class Slide extends React.Component {
   render(){
@@ -10,8 +11,10 @@ class Slide extends React.Component {
       <section className='slide'>
         <header>
           { type === 'normal' && <SlideLabel title={ title || sectionTitle }/> }
+          { type === 'program' && <SlideLabel title={ 'Program' }/> }
         </header>
-        { content && <SlideContent content={ content }/> }
+        { type === 'normal' && <SlideContent content={ content }/> }
+        { type === 'program' && <SlideProgram content={ content }/> }
         <footer>
         </footer>
       </section>

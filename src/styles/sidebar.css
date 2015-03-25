@@ -13,6 +13,12 @@ component(sidebar) {
 
 .sidebar.closed {
   height: 4rem;
+  background-color: var(--yellow);
+  button {
+    border: none;
+    color: var(--yellow);
+    background-color: var(--yellow);
+  }
 }
 
 component(controlPanel) {

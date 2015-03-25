@@ -7,33 +7,7 @@ presenter:
   twitter: '@yeehaa'
   email: yeehaa@codingthehumanities.com
 slides: 
-- title: The Ends of Learning
+- title: Offline
   type: section-title
-- type: normal
-  content:
-    + Practices to Eradicate
-
-    + Goals to Achieve
-- type: normal
-  content:
-
-    + What Ends?
-
-    + To What End? 
-
-- title: To What End?
-  type: normal
-  content:
-
-- title: What Ends?
-  type: normal
-  content:
-
-    + Practice
-
-
-- type: section-title
-  title: Mirror Practice 
-
-- type: section-title
-  title: Ethos 
+- title: Online
+  type: section-title

@@ -22,7 +22,7 @@ component(slide){
 
   .meta h1 {
     font-size: 1rem;
-    padding: 0 0.5rem;
+    padding: 0 0.333333333rem;
     color: var(--baseColor);
     background-color: var(--inverseColor);
   }
@@ -34,8 +34,8 @@ component(slide){
 
     .profile {
       li p {
-        font-size: 0.5rem;
-        margin-bottom: 0.25rem;
+        font-size: 0.75rem;
+        margin-bottom: 0.375rem;
         padding: 0.25rem;
         color: var(--baseColor);
       }
@@ -45,7 +45,7 @@ component(slide){
   .label h1 {
     display: inline-block;
     font-size: 1.5rem;
-    padding: 0 0.75rem;
+    padding: 0 0.5rem;
     margin-bottom: 1.5rem;
   }
 
@@ -76,4 +76,12 @@ component(slide){
 
 .slide.titleSlide {
   justify-content: center;
+}
+
+.program {
+  div:nth-child(1) h1 {
+    background-color: var(--inverseColor);
+    color: var(--baseColor);
+  }
+
 }
