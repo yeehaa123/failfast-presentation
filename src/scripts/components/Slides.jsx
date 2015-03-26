@@ -1,6 +1,7 @@
 import React from 'react';
 import MainTitleSlide from './MainTitleSlide.jsx';
 import SectionTitleSlide from './SectionTitleSlide.jsx';
+import CreditsSlide from './CreditsSlide.jsx';
 import Slide from './Slide.jsx';
 import '../../styles/slides.css';
 import R from 'ramda';
@@ -10,12 +11,16 @@ class Main extends React.Component {
   selectType(data){
     let slide;
     switch(data.type){
-      case 'main-title': 
+      case 'main-title':
         slide = <MainTitleSlide slide={data}/>
         break;
-      case 'section-title': 
+      case 'section-title':
         slide = <SectionTitleSlide slide={data}/>
         break;
+      case 'credits':
+        slide = <CreditsSlide slide={data}/>
+        break;
+      case 'credits':
       default:
         slide = <Slide slide={data}/>
     }
@@ -24,7 +29,7 @@ class Main extends React.Component {
 
   render(){
     let { activeSlide, slides } = this.props;
-    let slideData = R.find(R.propEq('index', activeSlide))(slides); 
+    let slideData = R.find(R.propEq('index', activeSlide))(slides);
     let slide = slideData ? this.selectType(slideData) : null;
     return (
       <section className={ 'slides' }>

@@ -2,8 +2,10 @@ import R from 'ramda';
 
 function createSlideshow(data){
   let cover = createCover(data);
+  let backCover = createBackCover(data);
   let program = createProgram(data.slides);
-  let slideShow = R.concat([cover, program], data.slides);
+  let temp = R.concat([cover, program], data.slides);
+  let slideShow = R.concat(temp, [backCover]);
   data.slides = createSlides(slideShow);
   return data;
 }
@@ -14,6 +16,14 @@ function createCover(data){
   return { title, type, presenter, event };
 }
 
+function createBackCover(data){
+  let { url, presenter } = data;
+  let title = url;
+  let type = 'credits';
+  return { url, type, presenter };
+}
+
+
 function createProgram(slides){
   let getSectionSlides = R.filter(({ type }) => type === 'section-title');
   let sectionSlides = getSectionSlides(slides);
@@ -21,7 +31,6 @@ function createProgram(slides){
   let type = 'program';
   return { type, content };
 }
-
 
 function createSlides(slides){
   let sectionIndex = 0;

@@ -1,13 +1,155 @@
-title: Of Different Cultures
+title: Fail Fast, Fail Often
+url: kennisland.codingthehumanities.com
+
 event: 
   organizer: Kennisland
   date: 27-03-2014
+
 presenter:
   name: Jan Hein Hoogstad
   twitter: '@yeehaa'
   email: yeehaa@codingthehumanities.com
-slides: 
-- title: Offline
+
+slides:
+
+- title: My Background
   type: section-title
-- title: Online
+
+- title: My First Program
+  type: normal
+  content:
+
+    + 10 Print 'Yeehaa'
+
+    + 20 Goto 10
+
+- title: My Nature
+  type: normal
+  content:
+
+    + Innate Curiosity
+
+    + Self-Taught
+
+    + Omnivore, Polyglot
+
+    + Shared Interests
+
+- title: My Education
+  type: normal
+  content:
+
+    + Controlled Learning
+
+    + Spoon Feeding
+
+    + One Size Fits All
+
+    + Accidental Peers
+
+- title: Our Ethos
   type: section-title
+
+- type: normal
+  content:
+
+    + Common Space, Shared Home
+
+    + Continuous Negotiation
+
+- type: normal
+  content:
+
+    + Set of Shared Values
+
+    + Not Laws, Rules
+
+    + Perpetually Instable
+
+- type: normal
+  content:
+
+    + Dream Big
+
+    + Take Tiny Steps
+
+    + Fail Fast, Fail Often
+
+    + Test, Test, Test
+
+    + Ship It
+
+- title: Offline Spaces
+  type: section-title
+
+- title: Pilot
+  type: normal
+  content: 
+
+    + Bootcamp Model
+
+    + Full-Time 
+
+    + High-Intensity
+
+- title: Pilot
+  type: normal
+  content: 
+
+    + 15 Students  
+
+    + 3 Instructors
+
+    + 5 Student Assistants
+
+- title: Pilot
+  type: normal
+  content: 
+
+    + Co-working Space 
+
+    + No Lab!
+
+    + Squatting the University
+
+- title: Pilot
+  type: normal
+  content: 
+
+    + Collaborative Project
+
+    + [Making of Housemouse](http://housemouse.codingthehumanities.com)
+
+    + Self and Peer Assessment
+
+
+- title: Online Home
+  type: section-title
+
+- title: _Unacademic
+  type: normal
+  content:
+
+    + Curation
+
+    + Learning
+
+- title: _Unacademic
+  type: normal
+  content:
+
+    + Distributed Curriculum
+
+    + Git for Learning
+
+    + Clones, Forks
+
+- title: _Unacademic
+  type: normal
+  content:
+
+    + Fluid Roles
+
+    + Ownership
+
+    + Dynamic Content

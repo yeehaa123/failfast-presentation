@@ -11,8 +11,9 @@ class MPC extends React.Component {
     let { playing, slideShow, activeSlide, sidebarOpen } = this.props;
     return (
       <section className='app'>
-        <Sidebar isOpen={ sidebarOpen } />
+        <Sidebar side={ 'left' } isOpen={ sidebarOpen } />
         <Main activeSlide={ activeSlide } playing={ playing } slides={ slideShow.slides }/>
+        <Sidebar side={ 'right' } isOpen={ sidebarOpen } />
       </section>
     )
   }

@@ -10,21 +10,90 @@ component(slide){
     display: block;
   }
 
-  header, footer {
-    flex: 1;
-    display: flex;
-  }
-
   ul {
     padding: 0;
     margin: 0;
-  } 
+  }
+
+  h1, h2{
+    display: inline-block;
+    margin: 0;
+  }
+
+  h1 {
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    background-color: var(--baseColor);
+    color: var(--inverseColor);
+  }
+
+  .label h1 {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
 
   .meta h1 {
     font-size: 1rem;
     padding: 0 0.333333333rem;
+  }
+
+  .program h1 {
     color: var(--baseColor);
     background-color: var(--inverseColor);
+  }
+
+
+
+  a {
+    text-decoration: none;
+    color: var(--inverseColor);
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: var(--inverseColor);
+  }
+
+  li {
+    font-family: NittyBold;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li p {
+    display: inline-block;
+    width: auto;
+    font-style: normal;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+    font-size: 3rem;
+    background-color: var(--inverseColor); 
+    color: var(--baseColor);
+  }
+
+  li p:hover {
+    background-color: var(--baseColor);
+    color: var(--inverseColor);
+  }
+
+  li.has-link p {
+    background-color: var(--baseColor);
+    color: var(--inverseColor);
+  }
+
+  li.has-link p:hover {
+    background-color: var(--red);
+    color: var(--inverseColor);
+  }
+
+  header, footer {
+    flex: 1;
+    display: flex;
   }
 
   footer {
@@ -37,51 +106,16 @@ component(slide){
         font-size: 0.75rem;
         margin-bottom: 0.375rem;
         padding: 0.25rem;
-        color: var(--baseColor);
       }
     }
   }
+}
 
-  .label h1 {
-    display: inline-block;
-    font-size: 1.5rem;
-    padding: 0 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  li {
-    font-family: NittyBold;
-    margin: 0; 
-    padding: 0;
-    list-style: none;
-  }
-
-  li p {
-    display: inline-block;
-    width: auto;
-    font-style: normal;
-    margin: 0;
-    margin-bottom: 1.5rem;
-    padding: 0 1.5rem;
-    font-size: 3rem;
-    background-color: var(--inverseColor); 
-    color: var(--baseColor);
-  }
-
-  header, footer {
-    flex: 1;
-    display: flex;
-  }
+.slide.creditsSlide h1 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .slide.titleSlide {
   justify-content: center;
-}
-
-.program {
-  div:nth-child(1) h1 {
-    background-color: var(--inverseColor);
-    color: var(--baseColor);
-  }
-
 }
