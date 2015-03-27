@@ -1,5 +1,10 @@
 title: Fail Fast, Fail Often
 url: failfast.codingthehumanities.com
+thesis: 
+
+  + Coding !== Skill
+
+  + Coding === Ethos
 
 event: 
   organizer: Kennisland
@@ -53,14 +58,18 @@ slides:
 - type: normal
   content:
 
-    + Common Space, Shared Home
+    + Common Space
+
+    + Shared Home
 
     + Continuous Negotiation
 
 - type: normal
   content:
 
-    + Set of Shared Values
+    + Common Habits
+
+    + Shared Values
 
     + Not Laws, Rules
 

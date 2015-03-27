@@ -51,7 +51,7 @@ component(slide){
 
   a {
     text-decoration: none;
-    color: var(--inverseColor);
+    color: var(--red);
   }
 
   a:hover {
@@ -84,8 +84,7 @@ component(slide){
   }
 
   li.has-link p {
-    background-color: var(--baseColor);
-    color: var(--inverseColor);
+    background-color: var(--inverseColor);
   }
 
   li.has-link p:hover {
@@ -93,13 +92,10 @@ component(slide){
     color: var(--inverseColor);
   }
 
-  header, footer {
-    display: flex;
-    flex: 1;
-  }
 
   footer {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: flex-end;
 
@@ -120,4 +116,11 @@ component(slide){
 
 .slide.titleSlide {
   justify-content: center;
+}
+
+.titleSlide, .creditsSlide {
+  header {
+    display: flex;
+    flex: 1;
+  }
 }

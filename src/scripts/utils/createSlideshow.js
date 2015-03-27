@@ -2,12 +2,21 @@ import R from 'ramda';
 
 function createSlideshow(data){
   let cover = createCover(data);
+  let thesis = createThesis(data);
   let backCover = createBackCover(data);
   let program = createProgram(data.slides);
-  let temp = R.concat([cover, program], data.slides);
-  let slideShow = R.concat(temp, [backCover]);
+  let temp = R.concat([cover, thesis, program], data.slides);
+  let slideShow = R.concat(temp, [thesis, backCover]);
   data.slides = createSlides(slideShow);
   return data;
+}
+
+function createThesis(data){
+  let { thesis } = data;
+  let type = 'normal'
+  let title = 'Thesis'
+  let content = thesis;
+  return { title, type, content };
 }
 
 function createCover(data){
