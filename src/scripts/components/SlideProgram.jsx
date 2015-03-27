@@ -7,13 +7,15 @@ class SlideProgram extends React.Component {
   render(){
     let { content } = this.props;
     let createProgramList = R.mapIndexed((item, index) => (
-      <div key={ index }><h1>{ item }</h1></div>)
+      <li key={ index }><p>{ item }</p></li>)
     );
     let program= createProgramList(content);
 
     return (
-      <section className="program">
-        { program }
+      <section className="slideContent program">
+        <ul>
+          { program }
+        </ul>
       </section>
     )
   }
