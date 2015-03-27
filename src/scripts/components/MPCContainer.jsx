@@ -1,6 +1,8 @@
 import React from 'react';
 import MPC from './MPC.jsx';
+import key from 'keymaster';
 import { AppState } from '../stores/index.js';
+import Actions from '../actions/index.js';
 
 class MPCContainer extends React.Component {
 
@@ -11,7 +13,15 @@ class MPCContainer extends React.Component {
     this.onChange = this.onChange.bind(this);
   }
 
+  transitionSlide(direction){
+    Actions.transitionSlide(direction);
+  }
+
   componentDidMount() {
+    key('up', this.transitionSlide.bind(this, 'start'));
+    key('down', this.transitionSlide.bind(this, 'end'));
+    key('right', this.transitionSlide.bind(this, 'forward'));
+    key('left', this.transitionSlide.bind(this, 'back'));
     AppState.addChangeListener(this.onChange);
     this.onChange();
   }

@@ -18,6 +18,7 @@ var config = {
       'react',
       'ramda',
       'lodash',
+      'keymaster',
       'immutable',
       'superagent'
     ]
