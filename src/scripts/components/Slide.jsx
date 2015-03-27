@@ -15,8 +15,6 @@ class Slide extends React.Component {
         </header>
         { type === 'normal' && <SlideContent content={ content }/> }
         { type === 'program' && <SlideProgram content={ content }/> }
-        <footer>
-        </footer>
       </section>
     )
   }

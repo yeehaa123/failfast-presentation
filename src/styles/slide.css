@@ -38,6 +38,8 @@ component(slide){
   .meta h1 {
     font-size: 1rem;
     padding: 0 0.333333333rem;
+    color: var(--baseColor);
+    background-color: var(--inverseColor);
   }
 
   .program h1 {
@@ -92,8 +94,8 @@ component(slide){
   }
 
   header, footer {
-    flex: 1;
     display: flex;
+    flex: 1;
   }
 
   footer {
